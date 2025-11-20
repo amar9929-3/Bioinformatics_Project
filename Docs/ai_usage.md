@@ -1,4 +1,4 @@
-#AI Use Log
+# AI Use Log
 Tool/model & version:
 What I asked for:
 Snippet of prompt(s):
