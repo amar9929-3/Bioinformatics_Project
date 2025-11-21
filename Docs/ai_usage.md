@@ -21,4 +21,10 @@
 - What I asked for: To pre-process Lee’s data, ChatGPT was given part of the R code from the open-source paper and was asked to create an Excel file with certain variables. 
 - Snippet of prompt(s): I need to extract data for color change plasticity and initial color and put them in an Excel file. I have this R code: [code inserted here]. Can you please write some R code to extract these variables and combine them with the ecological variables?
 - What I changed before committing: I added this code block to the end of Script_Color_Plasticity_Data.R.
-- How I verified correctness (tests, sample data): This output was verified by checking the Excel file after it was created and comparing it to the original data matrices created in R. 
+- How I verified correctness (tests, sample data): This output was verified by checking the Excel file after it was created and comparing it to the original data matrices created in R.
+## Correlation Scatter plots
+- Tool/model & version: ChatGPT GPT-4.0
+- What I asked for: Nearly six months ago I used ChatGPT to imrpove the aesthetics of the plots I was making in GGplots when making scatter plots about correlation. I used these codes from a past project, and just edited them to apply to my new datasets/variables (Christian's and Lee's).
+- Snippet of prompt(s): I do not have the prompts anymore, it was way back when I was a master's student.
+- What I changed before committing: The variables and data sets the code was utilizing for the graphs.
+- How I verified correctness (tests, sample data): Visually assessed the data to ensure it had the same layout from my rudimentary scatter plot. Also, ensured the test statistics displayed were the same.  
