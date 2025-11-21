@@ -4,6 +4,12 @@
 - Snippet of prompt(s):
 - What I changed before committing:
 - How I verified correctness (tests, sample data):
+## Unsupervised Methods
+- Tool: ChatGPT; GPT-4
+- Asked: A code to import a .csv file that can be used to run and plot unsupervised methods (PCA, UMAP, and t-SNE); add color coding by population category; small error fixes
+- Snippet: How can I write a code in python to import a .csv file and run a PCA, UMAP, and t-SNE that will be used in unsupervised machine learning; how do I have the plot points color coded by their population category; why did I get this error message
+- Changed: Names/features to dataset column names; color bar name; csv file upload name
+- Verified: run code to see if it fully ran and plots were outputted
 ## Simulated Data
  - Tool: ChatGPT; GPT-4
  - Asked: A way to simulate data from our dataset that preserves relationships and correlation using statistical parameters.
