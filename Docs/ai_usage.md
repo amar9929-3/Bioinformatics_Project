@@ -28,3 +28,9 @@
 - Snippet of prompt(s): I do not have the prompts anymore, it was way back when I was a master's student.
 - What I changed before committing: The variables and data sets the code was utilizing for the graphs.
 - How I verified correctness (tests, sample data): Visually assessed the data to ensure it had the same layout from my rudimentary scatter plot. Also, ensured the test statistics displayed were the same.  
+## Confusion Matrix
+- Tool:Chat GPT; GPT-4
+- Asked: To help fix my code for the confusion matrix
+- Snippet: what does this error mean on my confusion matrix code: NameError Traceback (most recent call last)
+- Changed: changed Data.Population in code to y_test.unique
+- Verified: Ran code to ensure completion and that the proper display names appeared on the matrix. 
