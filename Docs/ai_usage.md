@@ -46,3 +46,9 @@
 - Snippet: How would i fix these codes to log transform only one variable
 - Changed: Column name that needs to be log transformed. 
 - Verified: Confirmed code section looked correct and properly ran. 
+## Color Bar Fix
+- Tool: Chat GPT; GPT-4
+- Asked: How to make color bar simpler
+- Snippet: How do i fix this section of code so that the color bar/legend only shows the colors associated with the population
+- Changed: Color bar code snippet
+- Verified: Ran code to see if color legend is simpler
