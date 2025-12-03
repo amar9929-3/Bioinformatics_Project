@@ -12,7 +12,9 @@ Using Machine Learning to Assess Explanatory Variables Differentiating Populatio
 ## R_Code Folder
 - "ChristianCorGraphCode.R":
 - "LeeCorGraphCode.R":
-- "Script_Color_Plasticity_Data.R":
+- "Script_Color_Plasticity_Data.R": Adapted from Lee & Walsh (2025) open source code. Takes raw color change data and extracts color change plasticity values. Puts them into a .csv file.
+- "Test_For_NormalitySkew_Lee.R": tests variables from Lee dataset for normality and skew to determine if log transformation is necessary.
+- "Test_For_NormalitySkew_Christian.R": tests variables from Christian dataset for normality and skew to determine if log transformation is necessary.
 ## Steps for Reproducibility
 - Data was preprocessed (Christian: Anne 3.3.csv; Lee: Lee_3.1.csv)
 - Preprocessed data was run through respective CoLab notebooks to generate simulated data that will be used for ML training
