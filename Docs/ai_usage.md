@@ -39,4 +39,10 @@
 - Asked: How to use my trained pipeline with new data
 - Snippet: How do I use a trained pipeline classifier on python to test a different set of data
 - Changed: Steps in previous pipeline (ex. log transform, data splitting, etc.) (found out previous code was incorrect)
-- Verified: Ran code to completion 
+- Verified: Ran code to completion
+## Log Transform Fix
+- Tool: Chat GPT; GPT-4
+- Asked: How to fix code so only one variable is log transformed
+- Snippet: How would i fix these codes to log transform only one variable
+- Changed: Column name that needs to be log transformed. 
+- Verified: Confirmed code section looked correct and properly ran. 
