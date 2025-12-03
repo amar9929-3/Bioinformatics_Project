@@ -52,3 +52,9 @@
 - Snippet: How do i fix this section of code so that the color bar/legend only shows the colors associated with the population
 - Changed: Color bar code snippet
 - Verified: Ran code to see if color legend is simpler
+## Random forest feature importance
+- Tool/model & version: Chat GPT; GPT-4
+- What I asked for: Crafting a code to obtain random forest feature importance. This was so we could quantify the ability to differentiate based off of the variables. 
+- Snippet of prompt(s): I used the same code I had from the module 10 homework, which I originally crafted with AI. I did not save this AI interaction, but I asked it to help me add a code in that took my existing Random Forest testing and went further to capture the feature importance. 
+- What I changed before committing: The dataset the code pertained to was changed in the code.
+- How I verified correctness (tests, sample data): On the homework, it was deemed the correct answer. So, I had faith it would still run properly. I also compared the numerical output to other visual results to see if they were logical. 
