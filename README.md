@@ -3,7 +3,8 @@ Using Machine Learning to Assess Explanatory Variables Differentiating Populatio
 ## Docs Folder
 - "ai_usage.md": Documents and explains ai usage. 
 - "Anne 3.3.csv" and "Lee_3.1.csv": Preprocessed real data. 
-- "simulated_group_conditoned.csv" and "simulated_Lee.csv": Simulated data used for ML training. 
+- "simulated_group_conditoned.csv" and "simulated_Lee.csv": Simulated data used for ML training.
+- "Lee Original Data Link": Raw text document that links the original open source data for Lee's dataset. The file is too large to upload to Github, so the link with a DOI is provided instead.
 ## Notebooks Folder
 - Contains all CoLab notebooks used for machine learning (visualization, unsupervised/supervised methods, etc.).
 - "ML_Christian_Tester.ipynb" and "ML_Lee.ipynb": Original basic code for ML and visualization that was adapted/edited.
