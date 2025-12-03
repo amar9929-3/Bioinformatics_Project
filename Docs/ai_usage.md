@@ -29,8 +29,14 @@
 - What I changed before committing: The variables and data sets the code was utilizing for the graphs.
 - How I verified correctness (tests, sample data): Visually assessed the data to ensure it had the same layout from my rudimentary scatter plot. Also, ensured the test statistics displayed were the same.  
 ## Confusion Matrix
-- Tool:Chat GPT; GPT-4
+- Tool: Chat GPT; GPT-4
 - Asked: To help fix my code for the confusion matrix
 - Snippet: what does this error mean on my confusion matrix code: NameError Traceback (most recent call last)
 - Changed: changed Data.Population in code to y_test.unique
 - Verified: Ran code to ensure completion and that the proper display names appeared on the matrix. 
+## Use Trained Pipeline
+- Tool: Chat GPT; GPT-4
+- Asked: How to use my trained pipeline with new data
+- Snippet: How do I use a trained pipeline classifier on python to test a different set of data
+- Changed: Steps in previous pipeline (ex. log transform, data splitting, etc.) (found out previous code was incorrect)
+- Verified: Ran code to completion 
