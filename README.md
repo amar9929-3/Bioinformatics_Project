@@ -23,18 +23,33 @@ Using Machine Learning to Assess Explanatory Variables Differentiating Populatio
   - Christian: "Anne 3.3.csv" run through "Simulate_Data_Christian.ipynb" to obtain "simulated_group_conditoned.csv".
   - Lee: "Lee_3.1.csv" run through "Simulate_Data_Lee.ipynb" to obtain "simulated_Lee.csv".
 - Simulated data was imported into the respective ML notebook ("ML_Christian_Finished.ipynb"; "ML_Lee_Finished.ipynb") and train/test split so that 85% would be used for unsupervised method visualization and ML training, and 15% would later be used to test the accuracy of the trained models.
-  - Drop unwanted columns and set predictor variable (Christian: Drop '@#', 'River', 'Predation', 'Population', 'Lengthmm', 'Weightg'. Predict 'Population'); (Lee: Drop 'Population'. 'Population').
+  - Drop unwanted columns and set predictor variable (Christian: Drop '@#', 'River', 'Predation', 'Population', 'Lengthmm', 'Weightg'. Predict 'Population'); (Lee: Drop 'Population'. Predict 'Population').
   - Train and test split with test size of 0.15
-- Define which columns need certain tranformations and how to transform them (later used in supervised model pipelines). If and how variables were transformed was determined by R codes "Test_For_NormalitySkew_Lee.R" and "Test_For_NormalitySkew_Christian.R". 
+- Define which columns need certain tranformations and how to transform them (later used in supervised model pipelines as make_preprocess). If and how variables were transformed was determined by R codes "Test_For_NormalitySkew_Lee.R" and "Test_For_NormalitySkew_Christian.R". 
   - Christian: Log transform "BMI" and "BrainWeightg". Log(x+1) transform "InternalParasite#". 
   - Lee: Log transform "BMI"
-- Log transform for unsupervised vis:
-- Unsupervised model plots:
-- Build and train supervised pipelines:
-- Confusion matrix of best model:
-- Cross validate training:
-- ROC curves:
-- Trained color coded UMAP:
-- Import real data:
-- split real data:
-- Run real data on best model and get accuracy and roc auc results: 
+- Define and log transform data that will be used for unsupervised model visualizations (PCA, UMAP, t-SNE)
+  - The data transformed here is defined differently from the data that will be used for supervised ML training and will only be used for unsupervised PCA, UMAP, and t-SNE model visualization.
+  - Note: This will not impact how the supervised models are trained later. 
+- Plot PCA, UMAP, and t-SNE models with a color bar/key that indicates the plotted sample with their respective population.
+  - Note: These plots do not impact the supervised ML training that will be done later. 
+- Build and train supervised pipelines.
+  - Logistic Regression (Log Reg), Random Forest Classifier (RF), and Support Vector Machine (SVM).
+  - Each model pipeline includes the previously defined process (make_preprocess) to transform the data as needed.
+  - Models are trained and tested on the simulated data (trained on 85% and tested on 15%).
+  - Results of accuracy and roc_auc_ovr for each model are printed.
+- Run a confusion matrix that shows how the best model predicted the test data and the true population of the data.
+  - Print a classification report of the best model. 
+- Run cross-validation (cv) with Stratified K-fold on each model to determine best accuracy.
+  - Determines how well the trained model may run with new unseen data.
+- Plot ROC AUC of the best trained model (plots False and True Positive Rate). 
+- Run a color coded UMAP plot that differentiates the train and test data used in the supervised models. 
+- Import the real preprocessed data that was used to generate the simulated data.
+  - Christian: "Anne 3.3.csv"
+  - Lee: "Lee_3.1.csv"
+  - Note: The "ML_Christian_Finished.ipynb" and "ML_Lee_Finished.ipynb" CoLabs and the trained models have not seen this data before. 
+- Drop unwanted variables and define predicted variable (should be same as what was done with the simulated data).
+  - Christian: Drop '@#', 'River', 'Predation', 'Population', 'Lengthmm', 'Weightg'. Predict 'Population'. 
+  - Lee: Drop 'Population'. Predict 'Population'.
+- Split the real data so that 15% will be used/predicted (sample fraction = 0.15). 
+- Run/predict the split real data on the best trained model/pipeline and get accuracy and roc auc results.
