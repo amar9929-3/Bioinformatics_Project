@@ -32,6 +32,7 @@ Using Machine Learning to Assess Explanatory Variables Differentiating Populatio
   - Lee: Log transform "BMI"
 - Define and log transform data that will be used for unsupervised model visualizations (PCA, UMAP, t-SNE)
   - The data transformed here is defined differently from the data that will be used for supervised ML training and will only be used for unsupervised PCA, UMAP, and t-SNE model visualization.
+  - Run the PCA code in R (Christian: "PCAChristian.R"; Lee: "PCALee.R") on the data to get the statistics and figure with the lines and how each feature pertains to PC1 and PC2.
   - Note: This will not impact how the supervised models are trained later. 
 - Plot PCA, UMAP, and t-SNE models with a color bar/key that indicates the plotted sample with their respective population.
   - Note: These plots do not impact the supervised ML training that will be done later. 
@@ -55,6 +56,4 @@ Using Machine Learning to Assess Explanatory Variables Differentiating Populatio
   - Lee: Drop 'Population'. Predict 'Population'.
 - Split the real data so that 15% will be used/predicted (sample fraction = 0.15). 
 - Run/predict the split real data on the best trained model/pipeline and get accuracy and roc auc results.
-- Run the PCA code in R on the data to get the statistics and figure with the lines and how each feature pertains to PC1 and PC2.
-  - Christian: "PCAChristian.R"
-  - Lee: "PCALee.R"
+- Values for random forest feature importance were obtained to determine the responsibility of each feature over the model's decisions. 
