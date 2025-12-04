@@ -58,3 +58,9 @@
 - Snippet of prompt(s): I used the same code I had from the module 10 homework, which I originally crafted with AI. I did not save this AI interaction, but I asked it to help me add a code in that took my existing Random Forest testing and went further to capture the feature importance. 
 - What I changed before committing: The dataset the code pertained to was changed in the code.
 - How I verified correctness (tests, sample data): On the homework, it was deemed the correct answer. So, I had faith it would still run properly. I also compared the numerical output to other visual results to see if they were logical. 
+## Fox Log Transform for Christian's Data
+- Tool: Chat GPT; GPT-4
+- Asked: How to fix code to log transform certain variables
+- Snippet: how do i fix this code so that specific variables are log transformed and one variable is log of x+1 transformed
+- Changed: Previous code and variable names
+- Verified: Conform correct code rewrite and run code to completion
