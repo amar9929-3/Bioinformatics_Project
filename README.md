@@ -55,4 +55,6 @@ Using Machine Learning to Assess Explanatory Variables Differentiating Populatio
   - Lee: Drop 'Population'. Predict 'Population'.
 - Split the real data so that 15% will be used/predicted (sample fraction = 0.15). 
 - Run/predict the split real data on the best trained model/pipeline and get accuracy and roc auc results.
-- Run the PCA code in R on the data to get the statistics and figure with the lines and how each feature pertains to PC1 and PC2. 
+- Run the PCA code in R on the data to get the statistics and figure with the lines and how each feature pertains to PC1 and PC2.
+  - Christian: "PCAChristian.R"
+  - Lee: "PCALee.R"
