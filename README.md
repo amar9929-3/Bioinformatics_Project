@@ -16,6 +16,8 @@ Using Machine Learning to Assess Explanatory Variables Differentiating Populatio
 - "Script_Color_Plasticity_Data.R": Adapted from Lee & Walsh (2025) open source code. Takes raw color change data and extracts color change plasticity values. Puts them into a .csv file.
 - "Test_For_NormalitySkew_Lee.R": tests variables from Lee dataset for normality and skew to determine if log transformation is necessary.
 - "Test_For_NormalitySkew_Christian.R": tests variables from Christian dataset for normality and skew to determine if log transformation is necessary.
+- "PCAChristian.R": Runs the code of PCA tests on the Christian dataset. Produces the importance of each criteria and the Keiser component. Produces the accompanying PCA figures.
+- "PCALee.R": Runs the code of PCA tests on the Lee dataset. Produces the importance of each criteria and the Keiser component. Produces the accompanying PCA figures. 
 ## Steps for Reproducibility
 - Data was preprocessed (Christian: Anne 3.3.csv; Lee: Lee_3.1.csv)
 - Preprocessed data was tested for skewness in their respective R code ("Test_For_NormalitySkew_Lee.R" and "Test_For_NormalitySkew_Christian.R") to determine necessary log transformations. 
@@ -53,3 +55,4 @@ Using Machine Learning to Assess Explanatory Variables Differentiating Populatio
   - Lee: Drop 'Population'. Predict 'Population'.
 - Split the real data so that 15% will be used/predicted (sample fraction = 0.15). 
 - Run/predict the split real data on the best trained model/pipeline and get accuracy and roc auc results.
+- Run the PCA code in R on the data to get the statistics and figure with the lines and how each feature pertains to PC1 and PC2. 
